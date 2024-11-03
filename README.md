@@ -18,23 +18,25 @@ de substituição de páginas e pensar criticamente sobre métodos para
 otimizá-lo de modo a reduzir a falta de página (page miss).O código de partida
 comentado está no primeiro commit.
 
-Saída da execução do algoritmo para a sequência: {1, 3, 0, 3, 5, 6, 3}
+Saída da execução do algoritmo para a sequência: {1, 3, 0, 3, 5, 6, 3}:
 
-    Sequência de referências Quadros
+```bash
+Sequência de referências Quadros
 
-            1               1 - -
+        1               1 - -
 
-            3               1 3 -
+        3               1 3 -
 
-            0               1 3 0
+        0               1 3 0
 
-            5               5 3 0
+        5               5 3 0
 
-            6               5 6 0
+        6               5 6 0
 
-            3               5 6 3
+        3               5 6 3
 
-    Total de faltas de página: 6
+Total de faltas de página: 6
+```
 
 ## Intervenções feitas no código de partida:
 
@@ -63,3 +65,4 @@ A existência de localidades temporais também podem apresentar faltas de págin
 Para ambos os gráficos a linha azul(corresponde ao teste de capacidade igual a 3), se manteve predominantemente acima das outras o que dá a entender que *quanto menor a capacidade maior a quantidade de faltas de página*, que pode ser explicado pelo fato de que a probabilidade da página ser encontrada é menor por ter uma capacidade menor.
 
 ### c) Pesquisar e implementar maneiras de reduzir o número de faltas de página. Como o algoritmo poderia se comportar se fosse combinado com uma estratégia de frequência de uso?
+
