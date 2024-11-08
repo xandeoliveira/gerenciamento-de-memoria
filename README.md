@@ -66,3 +66,8 @@ Para ambos os gráficos a linha azul(corresponde ao teste de capacidade igual a 
 
 ### c) Pesquisar e implementar maneiras de reduzir o número de faltas de página. Como o algoritmo poderia se comportar se fosse combinado com uma estratégia de frequência de uso?
 
+Foram feitas mudanças no algoritmo fifo para trabalhar com lista simplesmente encadeada para simular a fila e cada page desta fila tem o identificador da página, que é um valor numérico, e a variável para a frequência da página.
+
+Neste caso é monitorada apenas a frequência da página que está na fila, caso ela perca lugar na fila seu contador de frequência não existirá mais, voltando a ser zero caso aquela página volte a ser referenciada.
+
+A solução não é tão boa, funciona em alguns casos e outros não, tornado-se pouco confiável.
